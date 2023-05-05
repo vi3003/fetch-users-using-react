@@ -1,4 +1,5 @@
 body {
+  background: gainsboro;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -14,26 +15,27 @@ code {
 
 form {
   position: relative;
-  background: #ffffff;
+  background: #000;
   max-width: 360px;
   margin: 0 auto;
   margin-top: 50px;
   padding: 45px;
   text-align: center;
   color: #f88131;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px 0 #f88131;
 }
 
 form input {
 font-family: "Roboto", sans-serif;
 outline: 0;
-background: #f2f2f2;
+background: #282c34;
 width: 100%;
 border: 0;
 margin: 0 0 15px;
 padding: 15px;
 box-sizing: border-box;
 font-size: 14px;
+color: #f88131;
 }
 form button {
 font-family: "Roboto", sans-serif;
@@ -43,14 +45,14 @@ background: #f88131;
 width: 100%;
 border: 0;
 padding: 15px;
-color: #FFFFFF;
+color: #000;
 font-size: 14px;
 -webkit-transition: all 0.3 ease;
 transition: all 0.3 ease-in-out;
 cursor: pointer;
 }
 form button:hover {
-background: #e18207;
+background: #da5d0b;
 }
 
 .loader{
@@ -119,7 +121,7 @@ width: 80px;
 .key{
 font-weight: bold;
 letter-spacing: 1px;
-color: rgb(82, 189, 252);
+color: #31a8f8;
 border: 1px solid black;
 border-radius: 5px;
 padding: 10px;
