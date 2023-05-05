@@ -11,3 +11,130 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+form {
+  position: relative;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 45px;
+  text-align: center;
+  color: #21c7ff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+form input {
+font-family: "Roboto", sans-serif;
+outline: 0;
+background: #f2f2f2;
+width: 100%;
+border: 0;
+margin: 0 0 15px;
+padding: 15px;
+box-sizing: border-box;
+font-size: 14px;
+}
+form button {
+font-family: "Roboto", sans-serif;
+text-transform: uppercase;
+outline: 0;
+background: #21c7ff;
+width: 100%;
+border: 0;
+padding: 15px;
+color: #FFFFFF;
+font-size: 14px;
+-webkit-transition: all 0.3 ease;
+transition: all 0.3 ease-in-out;
+cursor: pointer;
+}
+form button:hover {
+background: #07abe1;
+}
+
+.loader{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.custom-loader {
+width: 50px;
+height: 50px;
+display: grid;
+}
+.custom-loader::before,
+.custom-loader::after {    
+content:"";
+grid-area: 1/1;
+--c: radial-gradient(farthest-side,#21c7ff 92%,#0000);
+background: 
+  var(--c) 50%  0, 
+  var(--c) 50%  100%, 
+  var(--c) 100% 50%, 
+  var(--c) 0    50%;
+background-size: 12px 12px;
+background-repeat: no-repeat;
+animation: s2 1s infinite;
+}
+.custom-loader::before {
+margin:4px;
+filter:hue-rotate(45deg);
+background-size: 8px 8px;
+animation-timing-function: linear
+}
+
+@keyframes s2{ 
+100%{transform: rotate(.5turn)}
+}
+
+.error-box{
+text-align: center;
+width: 450px;
+border: 2px solid red;
+background: rgb(252, 166, 166);
+color: red;
+}
+
+.box{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 600px;
+padding: 30px;
+position: relative;
+margin: 1rem auto;
+}
+
+.name-img{
+display: flex;
+}
+
+img {
+width: 80px;
+}
+
+.key{
+font-weight: bold;
+letter-spacing: 1px;
+color: grey;
+border: 1px solid black;
+border-radius: 5px;
+padding: 10px;
+}
+
+.value{
+font-family: 'Courier New', Courier, monospace;
+letter-spacing: 1px;
+border: 1px solid black;
+border-radius: 5px;
+padding: 10px;
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
