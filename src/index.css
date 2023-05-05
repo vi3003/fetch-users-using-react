@@ -20,7 +20,7 @@ form {
   margin-top: 50px;
   padding: 45px;
   text-align: center;
-  color: #21c7ff;
+  color: #f88131;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -39,7 +39,7 @@ form button {
 font-family: "Roboto", sans-serif;
 text-transform: uppercase;
 outline: 0;
-background: #21c7ff;
+background: #f88131;
 width: 100%;
 border: 0;
 padding: 15px;
@@ -50,7 +50,7 @@ transition: all 0.3 ease-in-out;
 cursor: pointer;
 }
 form button:hover {
-background: #07abe1;
+background: #e18207;
 }
 
 .loader{
@@ -68,7 +68,7 @@ display: grid;
 .custom-loader::after {    
 content:"";
 grid-area: 1/1;
---c: radial-gradient(farthest-side,#21c7ff 92%,#0000);
+--c: radial-gradient(farthest-side,#f88131 92%,#0000);
 background: 
   var(--c) 50%  0, 
   var(--c) 50%  100%, 
@@ -93,7 +93,7 @@ animation-timing-function: linear
 text-align: center;
 width: 450px;
 border: 2px solid red;
-background: rgb(252, 166, 166);
+background: rgb(245, 146, 146);
 color: red;
 }
 
@@ -119,7 +119,7 @@ width: 80px;
 .key{
 font-weight: bold;
 letter-spacing: 1px;
-color: grey;
+color: rgb(82, 189, 252);
 border: 1px solid black;
 border-radius: 5px;
 padding: 10px;
